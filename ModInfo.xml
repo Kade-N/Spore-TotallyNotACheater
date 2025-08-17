@@ -1,0 +1,6 @@
+<mod displayName="Totally Not A Cheater" unique="Kade.TotallyNotACheater" description="Allows enabling or disabling achievements, as well as optionally preventing cheats from disabling achievements and granting the Joker badge." installerSystemVersion="1.0.1.2" dllsBuild="2.5.400" hasCustomInstaller="true">
+	<prerequisite>TotallyNotACheater.dll</prerequisite>
+	<component unique="ShowCheatMessage" displayName="Show Cheat Message" description="Shows a &quot;You've cheated!&quot; message in the cheat console after achievements have been disabled due to cheating. Has no effect if &quot;Allow Cheating&quot; is also selected, as cheating won't disable achievements." defaultChecked="true">TotallyNotACheater-ShowCheatMessage</component>
+	<component unique="AllowCheating" displayName="Allow Cheating" description="Prevents all cheats from disabling achievements or awarding the Joker badge. Does not apply retroactively - use &quot;achievements -enable&quot; cheat to re-enable achievements in a save.">TotallyNotACheater-AllowCheating</component>
+	<remove>TotallyNotACheater-*</remove>
+</mod>
